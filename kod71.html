@@ -1,0 +1,28 @@
+<textarea cols="60" rows = "28" readonly>
+&lt;script&gt;
+let box = "";
+  var width = 30;
+  var height = 5;
+
+
+  for (let i = 0; i &lt; width; i++) {
+    document.write("*");
+  }
+document.write("&lt;br&gt;");
+
+  
+  for(let i = 0; i &lt; height; i++){
+    document.write("*");
+    for (let i = 0; i &lt; width-2; i++) {
+      document.write("&nbsp&nbsp");
+      }
+      document.write("*&lt;br&gt;");
+  }
+
+  if (height &gt; 1) {
+    for (let i = 0; i &lt; width; i++) {
+    document.write("*");
+    }
+  }
+  &lt;/script&gt;
+</textarea>

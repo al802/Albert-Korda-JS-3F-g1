@@ -1,0 +1,32 @@
+<textarea cols="60" rows = "30" readonly>
+&lt;script&gt;
+let box = "";
+  var x = prompt("imię");
+  var y = prompt("nazwisko");
+  var da = x.length;
+  var db = y.length;
+  var a = (da%4)+5;
+  var b = (db%6)+20;
+  document.write("a="+a+"&lt;br&gt;");
+  document.write("b="+b+"&lt;br&gt;");
+  for (let i = 0; i &lt; a; i++) {
+    document.write("*");
+  }
+document.write("&lt;br&gt;");
+
+  
+  for(let i = 0; i &lt; b; i++){
+    document.write("*");
+    for (let i = 0; i &lt; a-2; i++) {
+      document.write("&nbsp&nbsp");
+      }
+      document.write("*&lt;br&gt;");
+  }
+
+  if (b &gt; 1) {
+    for (let i = 0; i &lt; a; i++) {
+    document.write("*");
+    }
+  }
+  &lt;/script&gt;
+ </textarea>
