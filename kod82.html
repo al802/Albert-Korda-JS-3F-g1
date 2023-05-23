@@ -1,0 +1,37 @@
+<textarea cols="200" rows="40">
+<html>
+<head>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<head>
+	<h1><font color=red>Korda</font></h1>
+</head>
+<p><font color=green>dzis=new Date() --> bierze z przeglądarki pełną datę i strefe czasową i przypisuje do wartosci dzis<br>
+dzis = dzis.getHour --> z pełnej daty wycina godzinę i przypisuje do wartosci dzis<br>
+dzis = dzis.getMinutes --> z pełnej daty wycina minuty i przypisuje do wartosci dzis<br>
+dzis = dzis.getMonth+1 --> z pełnej daty wycina miesiąc, dodaje 1 ponieważ funkcja liczy daty od 0 i przypisuje do wartosci dzis<br>
+dzis = dzis.getDate() --> z pełnej daty wycina numer dnia i przypisuje do wartosci dzis<br>
+dzis = dzis.getFullYear --> z pełnej daty wycina rok w formacie rrrr i przypisuje do wartosci dzis<br>
+</font></p>
+<body>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : <span style=color:red;>" ,dzis.getMonth()+1,"</span>.<span style=color:green>",dzis.getDate(),"</span>.<span style=color:blue>",dzis.getFullYear(),"</span>");
+</script>
+
+
+</body>
+</html>
+</textarea>
